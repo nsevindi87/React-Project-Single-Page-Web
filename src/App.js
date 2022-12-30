@@ -5,8 +5,8 @@ import About from "./Components/About";
 import Services from "./Components/Sevices"
 import Contact from "./Components/Contact"
 import Policy from "./Components/Policy"
-import Error from "./Components/Error"
 import List from "./Components/List";
+import Footer from "./Components/Footer";
 
 const App = () =>{
   return(
@@ -18,11 +18,14 @@ const App = () =>{
       <Route path="/services" element={<Services />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/policy" element={<Policy />} />
-     {/* CALISMIYOR  <Route path="/" errorElement={<Error />} /> */}
     </Routes>
+    <Footer/>
     
     </>
   )
 }
 
 export default App
+
+
+{/* Error router CALISMIYOR  <Route path="/" errorElement={<Error />} /> */}

@@ -33,4 +33,45 @@ header{
 
 .active{
     color: rgb(152, 255, 49);
+    border-bottom: .1em double #fff;
+}
+
+.icon{
+    color: #fff;
+    font-size: 1.5rem !important;
+    margin: 0 1em 0 1.5em;
+}
+
+
+
+@media screen and (max-width:838px) {
+    html{
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .container-flex{
+        flex-direction: column;
+    }
+    .list{
+        margin-bottom: 1em;
+    }
+    html{
+        font-size: 13px;
+    }
+    
+}
+@media screen and (max-width:525px) {
+    html{
+        font-size: 11px;
+    }
+    
+}
+@media screen and (max-width:445px) {
+    html{
+        font-size: 9px;
+    }
+    
 }
