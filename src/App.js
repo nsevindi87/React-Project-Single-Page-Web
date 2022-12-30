@@ -6,10 +6,12 @@ import Services from "./Components/Sevices"
 import Contact from "./Components/Contact"
 import Policy from "./Components/Policy"
 import Error from "./Components/Error"
+import List from "./Components/List";
 
 const App = () =>{
   return(
     <>
+    <List/>
     <Routes>   
       <Route exact path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
