@@ -1,4 +1,5 @@
 import React from "react";
+import "../Css/FooterStyle.css"
 
 const Footer = ()=>{
     return(
@@ -14,6 +15,10 @@ const Footer = ()=>{
                 <div className="line">
                     <hr/>
                     <hr/>
+                </div>
+                <div className="copyright">
+                    <p>All rights reserved &copy;</p>
+                    <p>Made by N.Sevindi</p>
                 </div>
             </div>
         </footer>
