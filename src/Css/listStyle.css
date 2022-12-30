@@ -1,0 +1,36 @@
+:root{
+    --mainColor: rgb(165, 185, 48);
+}
+
+header{
+    background-color: var(--mainColor);
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 130px;
+    padding: 0.5em 0;
+}
+
+.listItem{
+    margin-left: 2em;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.active{
+    color: rgb(152, 255, 49);
+}

@@ -1,6 +1,7 @@
 import React from "react";
-import logo from "../Images/Nizami2.jpg"
+import logo from "../Images/NizamiLogo.png"
 import {NavLink} from "react-router-dom"
+import "../Css/listStyle.css"
 
 const List = ()=>{
     return(
@@ -10,12 +11,12 @@ const List = ()=>{
                 <div className="logoContainer">
                     <img src={logo} alt="logo" className="logo"/>
                 </div>
-                <nav>
-                    <NavLink to="/" className="listItem" activeClassName="activeItem">Home</NavLink>
-                    <NavLink to="/about" className="listItem" activeClassName="activeItem">About</NavLink>
-                    <NavLink to="/services" className="listItem" activeClassName="activeItem">Sevices</NavLink>
-                    <NavLink to="/contact" className="listItem" activeClassName="activeItem">Contact</NavLink>
-                    <NavLink to="/policy" className="listItem" activeClassName="activeItem">Policy</NavLink>
+                <nav className="list">
+                    <NavLink exact to="/" className="listItem" >Home</NavLink>
+                    <NavLink to="/about" className="listItem" >About</NavLink>
+                    <NavLink to="/services" className="listItem" >Sevices</NavLink>
+                    <NavLink to="/contact" className="listItem" >Contact</NavLink>
+                    <NavLink to="/policy" className="listItem" >Policy</NavLink>
                 </nav>
             </div>
         </header>
@@ -24,3 +25,5 @@ const List = ()=>{
 }
 
 export default List
+
+//Navlink icinde activeClassName calismiyor. exact yazdim ve class olarak .active css de sekillendirildi.
