@@ -52,3 +52,32 @@
     margin: 0 auto;
     display: block;
 }
+
+@media screen and (max-width:838px) {
+    html{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:733px) {
+    html{
+        font-size: 14px;
+    }
+    .mainSection{
+        flex-direction: column;
+        margin-top: 1em;
+    }
+    .contentBox {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contentBox h1{
+        font-size: 2.2em;
+        text-align: center;
+    }
+    .contentBox p{
+        font-size: 1em;
+    }
+    .imgContainer{
+        width: 60%;
+    }
+}
